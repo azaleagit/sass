@@ -1,0 +1,63 @@
+/* line 3, mysass.scss */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333333;
+}
+
+/* line 8, mysass.scss */
+header[role="banner"] {
+  margin: 20px 0 30px 0;
+  border-bottom: 4px solid #333;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  background-color: #ea4c89;
+  background-size: 16px 16px;
+  background-image: url(sasquatch.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+/* line 12, mysass.scss */
+header[role="banner"] #logo {
+  float: left;
+  margin: 0 20px 0 0;
+}
+/* line 16, mysass.scss */
+header[role="banner"] #logo img {
+  display: block;
+  opacity: .95;
+}
+/* line 22, mysass.scss */
+header[role="banner"] h1 {
+  padding: 15px 0;
+  font-size: 54px;
+  font-family: Jubilat, Georgia, serif;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* line 47, mysass.scss */
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+  border-bottom: 2px solid red;
+}
+/* line 52, mysass.scss */
+a:hover {
+  color: maroon;
+  border-color: maroon;
+}
+
+/* line 58, mysass.scss */
+li a {
+  color: blue;
+}
+/* line 61, mysass.scss */
+li a.alert {
+  color: red;
+}
+/* line 65, mysass.scss */
+li a.success {
+  color: green;
+}
