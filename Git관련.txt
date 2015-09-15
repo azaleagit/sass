@@ -1,0 +1,2 @@
+- 	Git동기화중에 libcurl 에러메세지가 나올때
+	window/system32/libcurl.dll 을 삭제하거나 rename 하면 동기화 됨
