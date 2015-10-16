@@ -54,3 +54,195 @@ a {
 		border-color: maroon;
 	}
 }
+
+section.main p {
+	margin: 0 0 20px 0;
+	font-size: 18px;
+	line-height: 1.5;
+
+	body.store &{
+		font-size: 16px;
+		line-height: 1.4;
+	}
+}
+
+$color-main: #333;		//black
+$color-light: #999;		//grey
+$color-accent: #ea4c89;	//pink
+$font-sans: "Proxima Nova", "Helvatica Neue", Helvatica, Arial, sans-serif;
+$font-serif: Jubilat, Georgia, serif;
+
+body {
+	padding: 0 8%;
+	font: {
+		family: $font-sans;
+		size: 100%;
+	}
+	color: $color-main;
+	background: #fff url(../img/bg.jpg) repeat-x -80% 0;
+}
+
+section.secondary {
+	background: darken($color-accent, 30%);
+}
+
+section.secondary {
+	background: lighten($color-accent, 30%);
+}
+
+@mixin title-style {
+	margin: 0 0 20px 0;
+	font: {
+		family: $font-serif;
+		size: 20px;
+		weight: bold;
+	}
+	text-transform: uppercase;
+}
+
+@mixin title-style-param($color) {
+	margin: 0 0 20px 0;
+	font: {
+		family: $font-serif;
+		size: 20px;
+		weight: bold;
+	}
+	text-transform: uppercase;
+	color: $color;
+}
+
+@mixin title-style-mparam($color: blue, $background: green) {
+	margin: 0 0 20px 0;
+	font: {
+		family: $font-serif;
+		size: 20px;
+		weight: bold;
+	}
+	text-transform: uppercase;
+	color: $color;
+	background: $background;
+}
+
+section.main h2 {
+	@include title-style;
+}
+
+section.main h2 {
+	@include title-style-mparam($background: pink);
+}
+
+section.main h2 {
+	@include title-style-mparam(#c63, #333);
+}
+
+section.main h2 {
+	@include title-style-param(#c63);
+}
+
+section.secondary h3 {
+	@include title-style;
+}
+
+section.secondary h3 {
+	@include title-style-mparam(#c63, #eee);
+}
+
+section.secondary h3 {
+	@include title-style;
+	color: #999;
+}
+
+@mixin rounded($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+@mixin shadow($x, $y, $blur, $color) {
+	-webkit-box-shadow: $x, $y, $blur, $color;
+	   -moz-box-shadow: $x, $y, $blur, $color;
+	        box-shadow: $x, $y, $blur, $color;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+	50% {
+		-webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+}
+@-moz-keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+	50% {
+		-moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+	}
+	100% {
+		-moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+}
+@-o-keyframes pulse {
+	0% {
+		-o-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+	50% {
+		-o-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+	}
+	100% {
+		-o-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+	50% {
+		box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+	}
+	100% {
+		box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+	}
+}
+
+#recommend {
+	-webkit-animation: pulse 1.5s infinite erase-in-out;
+	-moz-animation: pulse 1.5s infinite erase-in-out;
+	-o-animation: pulse 1.5s infinite erase-in-out;
+	animation: pulse 1.5s infinite erase-in-out;
+}
+
+@-webkit-keyframes float-a {
+   	50%{
+  		-webkit-transform:translate(0, 5px);
+  		transform:translate(0, 5px)
+   	}
+}
+@-moz-keyframes float-a {
+    50%{
+      	-moz-transform:translate(0, 5px);
+   	    transform:translate(0, 5px)
+    }
+}
+@-o-keyframes float-a {
+   	50%{
+   		-o-transform:translate(0, 5px);
+   		transform:translate(0, 5px)
+   	}
+}
+@keyframes float-a{
+   	50%{
+   		transform:translate(0, 5px)
+   	}
+}
+    
+#blinkImg img {
+    -webkit-animation:float-a 1.5s ease-in-out infinite;
+    -moz-animation:float-a 1.5s ease-in-out infinite;
+    -o-animation:float-a 1.5s ease-in-out infinite;
+    animation:float-a 1.5s ease-in-out infinite
+}

@@ -48,3 +48,220 @@ a:hover {
   color: maroon;
   border-color: maroon;
 }
+
+/* line 58, test.scss */
+section.main p {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* line 63, test.scss */
+body.store section.main p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* line 75, test.scss */
+body {
+  padding: 0 8%;
+  font-family: "Proxima Nova", "Helvatica Neue", Helvatica, Arial, sans-serif;
+  font-size: 100%;
+  color: #333333;
+  background: white url(../img/bg.jpg) repeat-x -80% 0;
+}
+
+/* line 85, test.scss */
+section.secondary {
+  background: #8d1040;
+}
+
+/* line 89, test.scss */
+section.secondary {
+  background: #fad5e3;
+}
+
+/* line 126, test.scss */
+section.main h2 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 130, test.scss */
+section.main h2 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: blue;
+  background: pink;
+}
+
+/* line 134, test.scss */
+section.main h2 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cc6633;
+  background: #333333;
+}
+
+/* line 138, test.scss */
+section.main h2 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cc6633;
+}
+
+/* line 142, test.scss */
+section.secondary h3 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 146, test.scss */
+section.secondary h3 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cc6633;
+  background: #eeeeee;
+}
+
+/* line 150, test.scss */
+section.secondary h3 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+@-webkit-keyframes pulse {
+  /* line 168, test.scss */
+  0% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+
+  /* line 171, test.scss */
+  50% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+  }
+
+  /* line 174, test.scss */
+  100% {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+}
+
+@-moz-keyframes pulse {
+  /* line 179, test.scss */
+  0% {
+    -moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+
+  /* line 182, test.scss */
+  50% {
+    -moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+  }
+
+  /* line 185, test.scss */
+  100% {
+    -moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+}
+
+@-o-keyframes pulse {
+  /* line 190, test.scss */
+  0% {
+    -o-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+
+  /* line 193, test.scss */
+  50% {
+    -o-box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+  }
+
+  /* line 196, test.scss */
+  100% {
+    -o-box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+}
+
+@keyframes pulse {
+  /* line 201, test.scss */
+  0% {
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+
+  /* line 204, test.scss */
+  50% {
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.9);
+  }
+
+  /* line 207, test.scss */
+  100% {
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
+  }
+}
+
+/* line 212, test.scss */
+#recommend {
+  -webkit-animation: pulse 1.5s infinite erase-in-out;
+  -moz-animation: pulse 1.5s infinite erase-in-out;
+  -o-animation: pulse 1.5s infinite erase-in-out;
+  animation: pulse 1.5s infinite erase-in-out;
+}
+
+@-webkit-keyframes float-a {
+  /* line 220, test.scss */
+  50% {
+    -webkit-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+  }
+}
+
+@-moz-keyframes float-a {
+  /* line 226, test.scss */
+  50% {
+    -moz-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+  }
+}
+
+@-o-keyframes float-a {
+  /* line 232, test.scss */
+  50% {
+    -o-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+  }
+}
+
+@keyframes float-a {
+  /* line 238, test.scss */
+  50% {
+    transform: translate(0, 5px);
+  }
+}
+
+/* line 243, test.scss */
+#blinkImg img {
+  -webkit-animation: float-a 1.5s ease-in-out infinite;
+  -moz-animation: float-a 1.5s ease-in-out infinite;
+  -o-animation: float-a 1.5s ease-in-out infinite;
+  animation: float-a 1.5s ease-in-out infinite;
+}
